@@ -1,0 +1,16 @@
+foo:
+
+- name: bar
+  key: a-value
+  another_key:
+    sub_key: a-subkey-value
+
+- name: baz
+  key: another-value
+  another_key:
+    sub_key: another-sub-key-value
+
+- name: baz
+  keys:
+  - item
+  - another item
