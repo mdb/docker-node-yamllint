@@ -13,3 +13,7 @@ build:
 push: build
 	docker push ${LATEST}
 	docker push ${IMG}
+
+tag:
+	git tag ${VERSION}
+	git push origin ${VERSION}
