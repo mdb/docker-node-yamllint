@@ -4,6 +4,8 @@ TAG     := ${VERSION}
 IMG     := ${NAME}:${TAG}
 LATEST  := ${NAME}:latest
 
+all: build
+
 build:
 	docker build -t ${IMG} .
 	docker tag ${IMG} ${LATEST}
